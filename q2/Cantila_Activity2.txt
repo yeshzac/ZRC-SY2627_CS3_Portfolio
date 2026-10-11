@@ -1,0 +1,1 @@
+Using the @property decorator  makes code easier to read by allowing you to access and modify object attributes using natural dot notation (obj.attribute) instead of clunky method calls like obj.get_attribute() and obj.set_attribute(value)

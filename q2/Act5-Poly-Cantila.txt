@@ -1,0 +1,15 @@
+1. What do all the methods (move(), special_move(), use()) in the previous activities have in common?
+They all share the same method name and purpose across unrelated classes that do not share a common parent class, 
+allowing them to be called dynamically using duck-typing.
+
+2. How does this activity show polymorphism in a gaming context?
+It demonstrates polymorphism through duck-typing: a single function (apply_item()) or loop can handle completely
+different items (HealthPotion, ManaPotion, SpeedBoost) uniformly without needing to know their specific class
+type, simply by calling the .use() method which behaves uniquely for each item.
+
+3. Can you think of other examples where the same action behaves differently depending on the character or item?
+An equip() method: Calling .equip() on a sword might equip it to the main hand, while calling it on armor equips 
+it to the torso slot, and on a ring equips it to the finger slot.
+
+An interact() method: Calling .interact() on an NPC opens a dialogue window, while calling it on a chest opens an 
+inventory loot menu, and on a door opens or closes it.
